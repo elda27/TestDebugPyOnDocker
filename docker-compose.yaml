@@ -1,0 +1,8 @@
+version: '3'
+services:
+  main:
+    image: python:3.8-slim
+    tty: true
+    volumes:
+      - ./main.py:/main.py
+    entrypoint: ["/usr/local/bin/python", "/main.py"]

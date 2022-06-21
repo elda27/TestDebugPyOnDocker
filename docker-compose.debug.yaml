@@ -1,0 +1,8 @@
+version: '3'
+services:
+  main:
+    entrypoint: ["/entrypoint-debug.sh"]
+    volumes:
+      - ./entrypoint-debug.sh:/entrypoint-debug.sh
+    ports:
+      - "5678:5678"
